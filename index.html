@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="google-site-verification" content="WwIWT2sEpHE2BNijOcMHsDn33bdTSmF2Qs8HW-zZY4A">
+<title>Au Fil Des Saisons – Fruits, légumes et produits locaux à Lens</title>
+<meta name="description" content="Magasin de produits locaux et de saison à Lens : fruits, légumes, produits laitiers, chocolats, bières, vins, épices et idées cadeaux.">
+<meta name="theme-color" content="#1F5A3B">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "GroceryStore", "name": "Au Fil Des Saisons", "description": "Magasin de produits locaux et de saison à Lens : fruits, légumes, produits laitiers, chocolats, bières, vins, épices.", "telephone": "+32477273556", "email": "frederic.leblon@hotmail.be", "paymentAccepted": "Bancontact, espèces", "address": {"@type": "PostalAddress", "streetAddress": "Rue du Thy 23", "postalCode": "7870", "addressLocality": "Lens", "addressRegion": "Hainaut", "addressCountry": "BE"}, "geo": {"@type": "GeoCoordinates", "latitude": 50.5580614, "longitude": 3.8917613}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "15:00", "closes": "18:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Friday"], "opens": "09:30", "closes": "12:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Friday"], "opens": "13:30", "closes": "18:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:30", "closes": "15:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:30", "closes": "12:30"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" id="gf">
+<script>(function(){var l=document.createElement("link");l.rel="stylesheet";l.href=document.getElementById("gf").href;document.head.appendChild(l)})();</script>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap"></noscript>
+<style>
+:root{
+  --bg:#F5F8F2; --surface:#FFFFFF; --text:#17301F; --muted:#51655A; --line:#D5DFD3;
+  --leaf:#1F5A3B; --on-leaf:#F5F8F2;
+  --banana:#F4C92B; --on-banana:#2B2200;
+  --jam:#8E2447; --on-jam:#FFF4F6;
+  --garlic:#E9E4D6; --on-garlic:#2A2A22;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1A13; --surface:#16251B; --text:#EAF1EA; --muted:#A3B5A8; --line:#2A3D30;
+    --leaf:#7FD1A0; --on-leaf:#0F1A13;
+    --garlic:#D9D3C0; --on-garlic:#2A2A22;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1A13; --surface:#16251B; --text:#EAF1EA; --muted:#A3B5A8; --line:#2A3D30;
+  --leaf:#7FD1A0; --on-leaf:#0F1A13; --garlic:#D9D3C0; --on-garlic:#2A2A22; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--banana);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;flex-wrap:wrap}
+.logo{font:800 22px "Bricolage Grotesque",sans-serif;text-decoration:none;letter-spacing:-.02em}
+nav{display:flex;gap:22px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--text)}
+.hero{padding:40px 0 64px}
+.hero h1{font-size:clamp(58px,14vw,168px);font-weight:800;line-height:.9;max-width:none;color:var(--leaf);letter-spacing:-.035em}
+.hero p.tag{font:700 clamp(22px,3.6vw,36px)/1.2 "Bricolage Grotesque",sans-serif;color:var(--text);margin:22px 0 0;max-width:none}
+.hero p{font-size:clamp(18px,2.2vw,22px);color:var(--muted);max-width:46ch;margin:22px 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--leaf);color:var(--on-leaf)}
+.btn.alt{background:transparent;border:2px solid var(--leaf);color:var(--text)}
+section{padding:72px 0}
+h2{font-size:clamp(32px,5vw,52px);font-weight:700;margin-bottom:12px}
+.lead{color:var(--muted);max-width:52ch;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.panel{border-radius:22px;padding:30px 26px 34px;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end}
+.panel .emo{font-size:64px;line-height:1;margin-bottom:auto}
+.panel h3{font-size:34px;font-weight:800;margin-bottom:8px}
+.panel p{margin:0}
+.p1{background:var(--banana);color:var(--on-banana)}
+.p2{background:var(--jam);color:var(--on-jam)}
+.p3{background:var(--garlic);color:var(--on-garlic)}
+.p4{background:var(--leaf);color:var(--on-leaf)}
+.pv{background:#CFE5B8;color:#14301B}
+.ps{background:#A84A12;color:#FFF6EC}
+.pc{background:#2F3E6B;color:#F2F4FB}
+.gal figure{margin:0}.gal img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px}.gal figcaption{margin-top:8px;color:var(--muted);font-size:15px}
+.more{margin-top:22px;color:var(--muted)}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
+.card h3{font-size:24px;margin-bottom:12px}
+.card p{margin:6px 0}
+table{border-collapse:collapse;width:100%}
+td{padding:6px 0;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right;color:var(--muted)}
+.todo{background:color-mix(in srgb,var(--banana) 35%,transparent);padding:1px 8px;border-radius:6px;font-size:.92em}
+.open{display:inline-flex;align-items:center;gap:10px;margin:26px 0 0;font-weight:500}
+.dot{width:12px;height:12px;border-radius:50%;background:var(--jam)}
+.open.on .dot{background:#2E9E5B}
+tr.today td{font-weight:700;color:var(--text)}
+.btn,.panel{transition:transform .2s ease}
+.btn:hover,.panel:hover{transform:translateY(-2px)}
+@media (prefers-reduced-motion:reduce){.btn:hover,.panel:hover{transform:none}}
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.order{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;align-items:start}
+.fields{display:grid;gap:14px}
+.fields label{display:block;font-weight:500;margin-bottom:4px}
+.fields input,.fields select,.fields textarea{width:100%;font:inherit;padding:12px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--text)}
+.qty{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.fine{color:var(--muted);font-size:15px;margin:0}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:56px}
+.ph{aspect-ratio:4/3;border-radius:18px;border:2px dashed var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--muted);text-align:center;padding:12px}
+.ph b{font-size:34px}
+.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px;margin-bottom:26px}
+.rev{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px}
+.stars{color:var(--banana);font-size:20px;letter-spacing:2px}
+.gallery{margin-bottom:56px}
+.viewer{position:relative;border-radius:22px;overflow:hidden;background:var(--surface);border:1px solid var(--line)}
+.viewer{height:clamp(300px,62vw,540px);display:flex;align-items:center;justify-content:center}
+.viewer .bg{position:absolute;inset:-40px;background-size:cover;background-position:center;filter:blur(30px) brightness(.75)}
+.viewer img{position:relative;z-index:1;display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain}
+.viewer .nav,.viewer .cap{z-index:2}
+.viewer .cap{position:absolute;left:0;right:0;bottom:0;padding:48px 22px 18px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.7));display:flex;justify-content:space-between;gap:12px;font-weight:500}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:#17301F;font-size:28px;line-height:1;cursor:pointer}
+.prev{left:14px}.next{right:14px}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.thumbs button{padding:0;border:0;border-radius:14px;overflow:hidden;cursor:pointer;opacity:.6;background:none;transition:opacity .2s}
+.thumbs button[aria-current="true"]{opacity:1;outline:3px solid var(--leaf);outline-offset:2px}
+.thumbs img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.story{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px;align-items:start}
+.story p{margin:0 0 16px;max-width:60ch}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.facts li{display:flex;align-items:center;gap:16px;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:18px 20px;font-weight:500}
+.facts b{font-size:32px;line-height:1}
+.list{list-style:none;margin:0;padding:0}
+.list li{padding:8px 0;border-bottom:1px solid var(--line)}
+.baskets{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.baskets .card{background:var(--bg)}
+.baskets p{margin:0;color:var(--muted)}
+.pw{background:#E6D3A3;color:#3A2D0E}
+.perkswrap{padding-bottom:34px}
+.perks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.perks li{display:flex;align-items:center;gap:14px;padding:16px 20px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
+.perks .ic{flex:none;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;background:color-mix(in srgb,var(--leaf) 16%,transparent)}
+.perks strong{display:block;font:700 18px "Bricolage Grotesque",sans-serif;line-height:1.1}
+.perks li span:not(.ic){color:var(--muted);font-size:15px}
+.wave{display:block;width:100%;height:36px;color:var(--surface);margin-bottom:-1px}
+#histoire{border-top:0}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:24px 22px 44px}
+.hero h1{font-size:clamp(56px,7.6vw,100px);line-height:.9}
+.hero p.open{display:inline-flex;margin:0 0 24px;padding:8px 16px;background:var(--surface);border:1px solid var(--line);border-radius:999px;font-size:15px;color:var(--text);max-width:none}
+.hero p.tag{margin:22px 0 0}
+.hero p.desc{margin:14px 0 26px;max-width:44ch}
+.proof{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 22px;font-weight:500}
+.rl{display:inline-block;margin-top:14px;text-decoration:none;font-weight:500;border-bottom:1.5px solid var(--line)}
+.rl:hover{border-color:var(--leaf)}
+.rl .stars{font-size:17px;margin-right:6px}
+.hero-pics{position:relative;height:clamp(380px,44vw,540px)}
+.pic{position:absolute;object-fit:cover;border-radius:24px;border:6px solid var(--bg);box-shadow:0 22px 40px -18px rgba(0,0,0,.45);background:var(--surface)}
+.pic.a{right:0;top:0;width:66%;height:80%}
+.pic.b{left:0;bottom:0;width:56%;height:50%}
+.sticker{position:absolute;right:4%;bottom:4%;width:132px;height:132px;border-radius:50%;background:var(--banana);color:var(--on-banana);display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;font:800 18px/1.1 "Bricolage Grotesque",sans-serif;transform:rotate(-10deg)}
+@media (max-width:860px){.hero{grid-template-columns:1fr;gap:28px}.hero h1{font-size:clamp(56px,18vw,104px)}.hero-pics{height:clamp(320px,82vw,440px)}}
+.hero-pics{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding-bottom:30px}
+.hero-pics .m{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:22px;background:var(--surface)}
+.hero-pics .m:nth-of-type(even){transform:translateY(30px)}
+.hero-pics .sticker{width:112px;height:112px;font-size:16px;left:50%;top:46%;right:auto;bottom:auto;transform:translate(-50%,-50%) rotate(-10deg);border:5px solid var(--bg)}
+#etals{border-top:0}
+.stars{color:#8A5A00}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .stars{color:var(--banana)}}
+.etals{gap:16px}
+.etals li:nth-child(even){margin-top:0}
+.etals img{aspect-ratio:4/5}
+.feature{grid-template-columns:minmax(0,300px) 1fr;gap:40px}
+.feature img{width:100%;max-width:300px;aspect-ratio:4/5;object-fit:cover;border-radius:20px}
+.viewer{height:clamp(260px,46vw,400px)}
+.hero-pics{max-width:470px;width:100%;justify-self:end;padding-bottom:0}
+.hero-pics .m:nth-of-type(even){transform:none}
+@media (max-width:860px){.hero-pics{justify-self:center}.feature img{max-width:100%}}
+body{background-image:radial-gradient(900px 420px at 88% -40px,color-mix(in srgb,var(--banana) 20%,transparent),transparent 70%);background-repeat:no-repeat}
+section h2::before{content:"";display:block;width:46px;height:5px;border-radius:3px;background:var(--banana);margin-bottom:16px}
+.card,.rev,.faq details,.perks li,.facts li{box-shadow:0 1px 2px rgba(23,48,31,.05),0 14px 28px -18px rgba(23,48,31,.22)}
+.panel,.etals figure,.viewer,.feature img{box-shadow:0 18px 34px -22px rgba(23,48,31,.45)}
+.btn{box-shadow:0 10px 20px -12px rgba(31,90,59,.65);transition:transform .2s ease,box-shadow .2s ease,opacity .2s}
+.btn.alt{box-shadow:none}
+.etals img,.feature img,.hero-pics .m{transition:transform .5s ease}
+.etals figure:hover img,.feature:hover img,.hero-pics .m:hover{transform:scale(1.04)}
+.etals figure{overflow:hidden}
+.viewer img{transition:opacity .2s ease}
+.faq details{transition:box-shadow .2s ease,border-color .2s ease}
+.faq details[open]{border-color:var(--leaf)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@keyframes up{from{opacity:0;transform:translateY(20px)}}
+@keyframes pop{from{opacity:0;transform:scale(.94)}}
+.hero-text>*{animation:up .8s ease backwards}
+.hero-text>:nth-child(2){animation-delay:.08s}.hero-text>:nth-child(3){animation-delay:.16s}.hero-text>:nth-child(4){animation-delay:.24s}.hero-text>:nth-child(5){animation-delay:.32s}.hero-text>:nth-child(6){animation-delay:.4s}
+.hero-pics .m{animation:pop .9s ease backwards}
+.hero-pics .m:nth-of-type(2){animation-delay:.12s}.hero-pics .m:nth-of-type(3){animation-delay:.24s}.hero-pics .m:nth-of-type(4){animation-delay:.36s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important;transition:none!important}.hero-text>*,.hero-pics .m{animation:none}.etals figure:hover img,.feature:hover img,.hero-pics .m:hover{transform:none}}
+.etals img,.feature img,.thumbs img,.hero-pics .m{height:auto}
+.progress{position:fixed;left:0;top:env(safe-area-inset-top,0px);height:3px;width:100%;background:var(--leaf);transform:scaleX(0);transform-origin:0 50%;z-index:70}
+@keyframes grow{to{transform:scaleX(1)}}
+@supports (animation-timeline:scroll()){.progress{animation:grow linear both;animation-timeline:scroll(root)}}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -7px}}
+@keyframes wob{0%,100%{rotate:0deg}50%{rotate:9deg}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,158,91,.55)}100%{box-shadow:0 0 0 10px rgba(46,158,91,0)}}
+.hero-pics .m{animation:pop .9s ease backwards,float 7s ease-in-out 1.2s infinite}
+.hero-pics .m:nth-of-type(1){animation-delay:0s,1.2s}
+.hero-pics .m:nth-of-type(2){animation-delay:.12s,1.8s;animation-duration:.9s,8s}
+.hero-pics .m:nth-of-type(3){animation-delay:.24s,2.4s;animation-duration:.9s,7.5s}
+.hero-pics .m:nth-of-type(4){animation-delay:.36s,3s;animation-duration:.9s,8.5s}
+.sticker{animation:wob 5s ease-in-out infinite}
+.open.on .dot{animation:pulse 2s ease-out infinite}
+.panel .emo{transition:transform .3s ease;transform-origin:left bottom}
+.panel:hover .emo{transform:rotate(-10deg) scale(1.15)}
+nav a{padding:4px 0;transition:color .2s ease,box-shadow .2s ease}
+nav a.act{color:var(--text);box-shadow:inset 0 -3px 0 var(--banana)}
+.count{font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){.hero-pics .m,.sticker,.open.on .dot,.progress{animation:none}.panel:hover .emo{transform:none}}
+body{transition:background-color .5s ease,color .5s ease}
+.btn{transition:transform .2s ease,box-shadow .2s ease,opacity .2s ease,background-color .3s ease,color .3s ease,border-color .3s ease}
+.btn:hover{background:color-mix(in srgb,var(--leaf) 86%,var(--text))}
+.btn.alt:hover{background:color-mix(in srgb,var(--leaf) 14%,transparent)}
+a{transition:color .25s ease}
+footer{background:linear-gradient(to bottom,var(--bg),color-mix(in srgb,var(--leaf) 12%,var(--bg)))}
+.viewer .bg{transition:opacity .25s ease}
+.wave{display:block;position:relative;height:90px;color:var(--surface);margin-bottom:-1px}
+.wave svg{display:block;width:100%;height:100%}
+.wave .th{fill:none;stroke:var(--leaf);stroke-width:2.4;stroke-dasharray:3 8;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.thread{position:absolute;inset:0;clip-path:inset(-40px 100% -40px 0);transition:clip-path 1.8s ease}
+.wave.go .thread{clip-path:inset(-40px 0 -40px 0)}
+.sd{position:absolute;font-size:26px;line-height:1;opacity:0;transform:translate(-50%,-80%) scale(.4);transition:opacity .4s ease,transform .6s cubic-bezier(.3,1.6,.5,1)}
+.wave.go .sd{opacity:1;transform:translate(-50%,-80%) scale(1)}
+.wave.go .sd:nth-of-type(1){transition-delay:.4s}.wave.go .sd:nth-of-type(2){transition-delay:.8s}.wave.go .sd:nth-of-type(3){transition-delay:1.2s}.wave.go .sd:nth-of-type(4){transition-delay:1.6s}
+@media (prefers-reduced-motion:reduce){.thread{clip-path:none!important;transition:none}.sd{opacity:1;transform:translate(-50%,-80%);transition:none!important}}
+section{border:0}
+.sep{display:flex;align-items:center;gap:20px;max-width:780px;margin:-6px auto -34px;padding:0 22px;position:relative;z-index:2}
+.sep i{flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--leaf) 0 6px,transparent 6px 14px);opacity:.6;transform:scaleX(0);transition:transform 1.3s ease}
+.sep i:first-child{transform-origin:100% 50%;-webkit-mask-image:linear-gradient(to right,transparent,#000);mask-image:linear-gradient(to right,transparent,#000)}
+.sep i:last-child{transform-origin:0 50%;-webkit-mask-image:linear-gradient(to left,transparent,#000);mask-image:linear-gradient(to left,transparent,#000)}
+.sep b{flex:none;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--surface);border:2.5px solid var(--banana);box-shadow:0 12px 24px -14px rgba(23,48,31,.5);opacity:0;transform:scale(.4) rotate(-40deg);transition:opacity .5s ease .2s,transform .8s cubic-bezier(.3,1.5,.5,1) .2s}
+.sep svg{width:28px;height:28px;fill:none;stroke:var(--leaf);stroke-width:1.8}
+.sep.go i{transform:scaleX(1)}
+.sep.go b{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.sep i{transform:none;transition:none}.sep b{opacity:1;transform:none;transition:none}}
+footer{padding:36px 0 48px;color:var(--muted);font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<a class="skip" href="#top">Aller au contenu</a>
+<div class="topbar"><div class="wrap">
+    <header>
+    <a class="logo" href="#top">Au Fil Des Saisons</a>
+    <nav aria-label="Navigation principale">
+      <a href="#histoire">Notre histoire</a>
+      <a href="#produits">Produits</a>
+      <a href="#avis">Photos et avis</a>
+      <a href="#infos">Nous trouver</a>
+    </nav>
+  </header>
+  </div></div>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="hero-text">
+      <p class="open" id="open" aria-live="polite"><span class="dot" aria-hidden="true"></span><span id="opentxt"></span></p>
+      <h1>Au Fil<br>Des<br>Saisons</h1>
+      <p class="tag">Manger local, au rythme des saisons.</p>
+      <p class="desc">Fruits, légumes et produits de saison à Lens : une partie cultivée à la ferme, le reste choisi chez plus de 20 producteurs locaux.</p>
+      <div class="btns">
+        <a class="btn" href="#infos">Venir au magasin</a>
+        <a class="btn alt" href="#produits">Voir nos produits</a>
+      </div>
+      <a class="rl" href="#avis"><span class="stars" aria-hidden="true">★★★★★</span> Lire les avis de nos clients</a>
+    </div>
+    <div class="hero-pics" aria-hidden="true">
+      <img class="m" id="hp1" alt="" src="img/hero-1.webp" fetchpriority="high" width="480" height="480" decoding="async"><img class="m" id="hp2" alt="" src="img/hero-2.webp" fetchpriority="high" width="480" height="480" decoding="async"><img class="m" id="hp3" alt="" src="img/hero-3.webp" width="480" height="480" decoding="async"><img class="m" id="hp4" alt="" src="img/hero-4.webp" width="480" height="480" decoding="async">
+      <div class="sticker">Local et de saison</div>
+    </div>
+  </div>
+
+  <div class="wrap perkswrap"><ul class="perks" aria-label="Infos pratiques"><li><span class="ic" aria-hidden="true">🅿️</span><div><strong>Parking</strong><span>Sur place</span></div></li><li><span class="ic" aria-hidden="true">♿</span><div><strong>Accessibilité</strong><span>Mobilité réduite</span></div></li><li><span class="ic" aria-hidden="true">💳</span><div><strong>Paiement</strong><span>Bancontact et espèces</span></div></li></ul></div>
+  <div class="wave" id="wave" aria-hidden="true"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 60C240 10 480 10 720 60S1200 110 1440 60V120H0Z" fill="currentColor"/></svg><div class="thread"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path class="th" d="M0 50C240 0 480 0 720 50S1200 100 1440 50"/></svg><span class="sd" style="left:12.50%;top:16.4px">🌱</span><span class="sd" style="left:37.50%;top:16.4px">🍓</span><span class="sd" style="left:62.50%;top:58.6px">🍂</span><span class="sd" style="left:87.50%;top:58.6px">❄️</span></div></div>
+  <section id="etals" class="band">
+    <div class="wrap">
+      <h2>Sur nos étals</h2>
+      <p class="lead">Un aperçu de ce que vous pouvez trouver au magasin.</p>
+      <ul class="etals">
+        <li><figure><img loading="lazy" src="img/tomates-mures-rangees-dans-d.webp" width="510" height="792" decoding="async" alt="Tomates mûres rangées dans des cagettes en bois"><figcaption>Tomates</figcaption></figure></li>
+        <li><figure><img loading="lazy" src="img/barquettes-de-framboises-fra.webp" width="437" height="701" decoding="async" alt="Barquettes de framboises fraîches"><figcaption>Framboises</figcaption></figure></li>
+        <li><figure><img loading="lazy" src="img/rangees-de-salades-rouges-et.webp" width="327" height="556" decoding="async" alt="Rangées de salades rouges et vertes au potager"><figcaption>Salades</figcaption></figure></li>
+        <li><figure><img loading="lazy" src="img/melons-rayes-dans-des-caisse.webp" width="370" height="705" decoding="async" alt="Melons rayés dans des caisses bleues"><figcaption>Melons</figcaption></figure></li>
+      </ul>
+      <div class="feature">
+        <img loading="lazy" src="img/fromages-de-chevre-et-charcu.webp" width="611" height="702" decoding="async" alt="Fromages de chèvre et charcuteries au comptoir réfrigéré">
+        <div>
+          <h3>Au comptoir frais</h3>
+          <p>Fromages de chèvre, charcuteries et préparations de producteurs locaux, à emporter pour l’apéro ou le repas du jour.</p>
+          <p class="btns"><a class="btn" href="#infos">Venir au magasin</a><a class="btn alt" href="tel:+32477273556">Appeler</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="histoire">
+    <div class="wrap">
+      <h2>Notre histoire</h2>
+      <div class="story">
+        <div>
+          <p>Frédéric est avant tout un homme de la terre. Il cultive lui-même salades, tomates, poireaux et céleris, en évitant les produits chimiques nocifs pour la santé.</p>
+          <p>Avec Anaïck, il a voulu aller plus loin : proposer des produits de saison, issus de leur ferme ou de producteurs voisins, en circuit court. Le magasin est né de cette idée, et de son nom : <em>au fil des saisons</em>.</p>
+        </div>
+        <ul class="facts">
+          <li><b aria-hidden="true">🌱</b><span>Légumes cultivés par Frédéric et Anaïck</span></li>
+          <li><b aria-hidden="true">🤝</b><span>Plus de <span class="count" data-to="20">20</span> producteurs partenaires</span></li>
+          <li><b aria-hidden="true">📍</b><span>Circuit court, à Lens et dans les villages voisins</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep" id="sep" aria-hidden="true"><i></i><b><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C6 17 4 11 6 5c6 0 12 2 12 9 0 3-2 5-6 7z"/><path d="M12 21V10"/></svg></b><i></i></div>
+  <section id="produits" class="band">
+    <div class="wrap">
+      <h2>Nos produits</h2>
+      <p class="lead">Une sélection de produits locaux et gourmands, qui change au fil des arrivages. Passez au magasin pour découvrir les nouveautés.</p>
+      <div class="grid">
+        <article class="panel pv">
+          <div class="emo" aria-hidden="true">🥕</div>
+          <h3>Fruits et légumes</h3>
+          <p>Fruits et légumes de saison, avec des conseils pour cuisiner ceux qu’on connaît moins.</p>
+        </article>
+        <article class="panel p1">
+          <div class="emo" aria-hidden="true">🫒</div>
+          <h3>Huiles et vinaigres</h3>
+          <p>Huiles et vinaigres aromatisés, en bouteilles à offrir ou à garder pour la cuisine.</p>
+        </article>
+        <article class="panel p2">
+          <div class="emo" aria-hidden="true">🍯</div>
+          <h3>Confitures et tartinades</h3>
+          <p>Confitures, miels, pâtes à tartiner et petits pots salés pour l’apéro.</p>
+        </article>
+        <article class="panel ps">
+          <div class="emo" aria-hidden="true">🌶️</div>
+          <h3>Épices</h3>
+          <p>Épices et mélanges pour relever vos plats toute l’année.</p>
+        </article>
+        <article class="panel p3">
+          <div class="emo" aria-hidden="true">🍺</div>
+          <h3>Bières, vins et liqueurs</h3>
+          <p>Bières locales et artisanales, vins et liqueurs à découvrir.</p>
+        </article>
+        <article class="panel p4">
+          <div class="emo" aria-hidden="true">🧀</div>
+          <h3>Laitiers et chocolats</h3>
+          <p>Produits laitiers, fromages frais aux herbes, chocolats et douceurs.</p>
+        </article>
+        <article class="panel pw">
+          <div class="emo" aria-hidden="true">🌾</div>
+          <h3>Vrac et fermes voisines</h3>
+          <p>Produits en vrac et produits des fermes environnantes.</p>
+        </article>
+        <article class="panel pc">
+          <div class="emo" aria-hidden="true">🎁</div>
+          <h3>Idées cadeaux</h3>
+          <p>Paniers garnis, bouteilles et douceurs à offrir, composés à votre goût.</p>
+        </article>
+      </div>
+      <p class="more">Et bien d’autres produits : l’assortiment change toujours avec les saisons. Demandez-nous en magasin.</p>
+    </div>
+  </section>
+
+  <section id="avis">
+    <div class="wrap">
+      <h2>Le magasin en photos</h2>
+      <p class="lead">Un aperçu de l’endroit avant de venir.</p>
+      <div class="gallery">
+        <div class="viewer" id="viewer" tabindex="0" aria-label="Galerie photos, utilisez les flèches pour naviguer">
+          <div class="bg" id="bg" aria-hidden="true"></div>
+          <img id="big" alt="" width="675" height="575" decoding="async">
+          <button type="button" class="nav prev" id="prev" aria-label="Photo précédente">‹</button>
+          <button type="button" class="nav next" id="next" aria-label="Photo suivante">›</button>
+          <div class="cap"><span id="cap"></span><span id="cnt"></span></div>
+        </div>
+        <div class="thumbs" id="thumb"></div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
